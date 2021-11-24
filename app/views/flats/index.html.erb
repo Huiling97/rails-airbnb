@@ -12,6 +12,7 @@
           <p class="card-text"><%= flat.address %></p>
           <%= link_to "More info", flat_path(flat) %>
           <%= link_to "Edit", edit_flat_path(flat) %>
+          <%= link_to "Remove", flat_path(flat), method: :delete, data: { confirm: "Are you sure?" } %>
         </div>
       </div>
     </div>
